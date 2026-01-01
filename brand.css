@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*header styling */
+
+header {
+  Display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1440px;
+  height: 86px;
+  padding: 16px 8px 16px 8px;
+  border-bottom: 1px solid  rgb(214, 214, 214);
+}
+
+/*Center of header styling */
+
+.header-center {
+  display: flex;
+  width: 580px;
+  height: 35px;
+  border: 2px solid #127FFF;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden; 
+}
+.searchbox,
+#category,
+.srchbtn {
+  height: 32px;
+  box-sizing: border-box;
+}
+.searchbox {
+  width: 338px;
+  border: 0px;
+  padding-left: 1px;
+}
+.searchbox::placeholder {
+  padding-left: 7px;
+  color: rgb(187, 187, 187);
+}
+#category{
+  width: 138px;
+  border:0px;
+  border-left: 2px solid #127FFF;
+  padding-left: 10px;
+  appearance: none;
+}
+.select-Help, 
+.select-category,
+.select-currency {
+  position: relative;
+  display: inline-block;
+}
+.category-arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  pointer-events: none;
+}
+.srchbtn {
+  width: 115px;
+  background-color: #127FFF;
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+/*Right side of header styling */
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+.header-right-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.material-symbols-outlined {
+ color: #b3b1b1;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' -25,
+  'opsz' 20
+}
+
+
+
+
+/*Navbar styling */
+
+nav {
+  Display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: space-around;
+  align-items: center;
+  width: 1440px;
+  height: 56px;
+  padding: 16px 8px 16px 8px;
+  border-bottom: 1px solid  rgb(214, 214, 214);
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 0px;
+  width: 800px;
+
+}
+.ctgry {
+  padding-left: 3px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 24px;
+  border: 0px;
+}
+
+.down-arrow {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  pointer-events: none;
+}
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 300px;
+}
+.currency-arrow {
+  position: absolute;
+  right: 27px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  pointer-events: none;
+}
+/*select country dropdown styling*/
+.selectcountrybtn {
+  background-color: #ffffff;
+  border: none;
+}
+
+.countrydropdown {
+  display: none;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  border: 1px solid #0f0f0f;
+  min-width: 150px;
+  height: 180px;
+  color: black;
+}
+.selectcountry:hover .countrydropdown{
+    display: block;
+}
+.dropdowncontent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+.dropdowncontent:hover {
+  background-color: #127FFF;
+}
+
+/*Footer styling*/
+Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 324px;
+  background-color: #ffffff;
+  padding: 16px 8px 16px 8px;
+}
+.top-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.top-footer span{
+  color: #b3b1b1;
+}
+.topfootercol, 
+.topfootercol-1,
+.topfootercol-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.topfootercol {
+  width: 130px;
+  gap: 20px;
+
+}
+.topfootercol-1 {
+  width: 350px;
+  gap: 20px;
+}
+.topfootercol-last {
+  width:240px ;
+}
+.social-icons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+}
+.getappbtn {
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  height: 60px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 12px;
+
+}
+
+.download {
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 800;
+}
+
