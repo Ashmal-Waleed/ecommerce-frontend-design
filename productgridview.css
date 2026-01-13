@@ -1,0 +1,63 @@
+.gridviewproduct-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  max-width: 926px;
+}
+.productviewcol2-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  width: 100%;
+  max-width: 926px;
+  max-height: 405px;
+}
+.productgridview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 295px;
+  max-height: 405px;
+  border: 1px solid #DEE2E7;
+  border-radius: 6px;
+  background-color: #ffffff;
+  justify-content: center;
+  text-align: center;
+
+}
+.productgridview-img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 295px;
+  max-height: 230px;
+}
+.productgridview-content {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #DEE2E7;
+  width: 100%;
+  max-width: 295px;
+  max-height: 200px;
+  padding: 16px;
+  justify-content: space-between;
+}
+.productgridview-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 200px;
+  text-align: left;
+}
+.productgridview-text p {
+  color: #606060;
+
+}
+
+
+
+
+
+

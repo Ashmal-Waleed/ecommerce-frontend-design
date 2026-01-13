@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="../brand.css">
-<link rel="stylesheet" href="../Media">
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<title>Document</title>
- 
+  <link rel="stylesheet" href="../Header&Footer.css">
+  <link rel="stylesheet" href="../Body.css">
+  <link rel="stylesheet" href="../Media">
+  <link rel="stylesheet" href="../Image">
+  <link rel="stylesheet" href="cart.html">
+  <link rel="stylesheet" href="gridview.html">
+  <link rel="stylesheet" href="listvewproduct.html">
+  <link rel="stylesheet" href="product.html">
+  <link rel="stylesheet" href="Brand.HTML">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+  <script src="brand.js"></script>
+
 </head>
 <body>
 
@@ -17,42 +29,47 @@
 
   <Header>
     <!--Left side of Header-->
-    <Div class="header-left">
-      <img src="../media/logo-colored.png" alt="logo">
-    </Div>
+    <a href="Brand.HTML" class="header-left">
+      <img src="../media/logo-colored.png" alt="logo" width="150px" height="46px">
+    </a>
     <!--Center of Header-->
-    <Div class="header-center">
-      <input class="searchbox" type="search" placeholder="Search">
+    <form id="searchForm" class="header-center">
+      <input       
+        class="searchbox"
+        type="search"
+        id="searchInput"
+        placeholder="Search"
+      />
       <Div class="select-category">
       <select name="category" id="category">
         <option value="" selected disabled>All Categories</option>
-        <option value="food">Food</option>
-        <option value="electronics">Electronics</option>
-        <option value="clothing">Clothing</option>
-        <option value="books">Books</option>
+        <option value="food">Tech</option>
+        <option value="electronics">Interior</option>
+        <option value="clothing">Cloth</option>
+        <option value="books">Book</option>
       </select>
       <img src="../media/down-arrow.png" class="category-arrow" />
       </Div> 
-      <button class="srchbtn">search</button>
-     </Div>
+      <button class="srchbtn" type="submit">search</button>
+    </form>
      <!--Right side of Header-->
     <Div class="header-right">
-      <div class="header-right-items">
+      <a href="#" class="header-right-items">
         <span class="material-symbols-outlined">person</span>
         <span style="color: #b3b1b1;">Profile</span>
-      </div>
-      <div class="header-right-items">
+      </a>
+      <a  href="#" class="header-right-items">
         <span class="material-symbols-outlined">chat</span>
         <span style="color: #b3b1b1;">Message</span>
-      </div>
-      <div class="header-right-items">
+      </a>
+      <a href="#" class="header-right-items">
         <span class="material-symbols-outlined">favorite</span>
         <span style="color: #b3b1b1;">Orders</span>
-      </div>
-      <div class="header-right-items">
+      </a>
+      <a href="cart.html" class="header-right-items">
         <span class="material-symbols-outlined">shopping_cart</span>
         <span style="color: #b3b1b1;">Cart</span>
-      </div>
+      </a>
     </Div>
   </Header>
 
@@ -62,7 +79,7 @@
   <!--Left side of Navbar-->
     <Div class="nav-left">
       <div>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" style="width: 24px;"></i>
         <span class="ctgry">All category</span>
       </div>
       <div>
@@ -129,20 +146,511 @@
     </div>
   </Nav>
 
-  <!--Hero Section-->
+  <main>
+    <!--Hero Section-->
+
+    <section class="herosection">
+      <Div class="herosection-left">
+        <div class="inner">Automobiles</div>
+        <div class="inner">Clothes and wear</div>
+        <div class="inner">Home interiors</div>
+        <div class="inner">Computer and tech</div>
+        <div class="inner">Tools, equipments</div>
+        <div class="inner">Sports and outdoor</div>
+        <div class="inner">Animal and pets</div>
+        <div class="inner">Machinery tools</div>
+        <div class="inner">More category</div>
+      </Div>
+      <Div class="herosection-center">
+        <div class="herosection-centercontent">
+          <h6 style="font-size: 23px;">Latest trending</h6>
+          <h6 style="font-size: 32px; font-size: 700;">Eletronic Items</h6>
+        <button id="learnmore">Learn More</button>
+        </div>
+        
+      </Div>
+      <Div class="herosection-right">
+        <div class="herosection-rightcol1">
+          <div class="rightcol-1">
+            <img src="../Media/Avatar.png" width="44px">
+            <p>Hi, user let’s get stated</p>
+          </div>
+          <button id="join">Join Now</button>
+          <button id="login">Log In</button>
+        </div>
+        <div class="herosection-rightcol2">
+          <p style="width: 144px; color: #ffffff;">Get US $10 off with a new supplier</p>
+        </div>
+        <div class="herosection-rightcol3">
+          <p style="width: 144px; color: #ffffff;">Send quotes with supplier preferences</p>
+        </div>
+      </Div>
+    </section>
+
+    <!--Deal and offer section-->
+
+    <section class="dealandoffer">
+      <div class="dealandoffer-left">
+        <h6 style="font-size: 20px; font-weight: 600;">Deals and offers</h6>
+        <h6 style="color: #8B96A5;">Hygiene equipments</h6>
+        <div class="countdown">
+          <div class="countdowncol">
+            <p style="font-weight: 700;">04</p>
+            <p style="font-size: 12px;">Days</p>
+          </div>
+          <div class="countdowncol">
+            <p style="font-weight: 700;">13</p>
+            <p style="font-size: 12px;">Hours</p>
+          </div>
+          <div class="countdowncol">
+            <p style="font-weight: 700;">34</p>
+            <p style="font-size: 12px;">Min</p>
+          </div>
+          <div class="countdowncol">
+            <p style="font-weight: 700;">56</p>
+            <p style="font-size: 12px;">Sec</p>
+          </div>
+        </div>
+      </div>
+      <div class="dealandoffer-right">
+        <div class="dealandoffer-rightcol">
+          <img src="../Image\tech\8.jpg">
+          <p>Smart watches</p>
+          <p style="color:#EB001B;">-25%</p>
+        </div>
+        <div class="dealandoffer-rightcol">
+          <img src="../Image\tech\7.jpg">
+          <p>Laptopes</p>
+          <p style="color:#EB001B;">-15%</p>
+        </div>
+        <div class="dealandoffer-rightcol">
+          <img src="../Image\tech\6.jpg">
+          <p>GoPro Cameras</p>
+          <p style="color:#EB001B;">-40%</p>
+        </div>
+        <div class="dealandoffer-rightcol">
+          <img src="../Image\tech\5.jpg">
+          <p>Headphones</p>
+          <p style="color:#EB001B;">-25%</p>
+        </div>
+        <div class="dealandoffer-rightcol">
+          <img src="../Image\tech\3.jpg">
+          <p>Cannon Cameras</p>
+          <p style="color:#EB001B;">-25%</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Home and outdoor section-->
+    <section class="HandOsection">
+      <div class="HandOsection-left">
+        <h4 style="font-size: 20px; font-weight: 600; line-height: 26px; letter-spacing: -0.2px; width: 130px;">Home and outdoor</h4>
+        <Button id="Source">Source Now</Button>
+      </div>
+      <div class="HandOsection-right">
+        <div class="rightcontent">
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Soft chairs</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\1.jpg" width="82px"  height="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p> Soft & chairs</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\6.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Kitchen dishes</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\5.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Smart watches</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\3.jpg" width="80px">
+            </div>
+          </div>
+        
+        </div>
+        <div class="rightcontent">
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Kitchen mixer</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 100</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\9.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Blenders</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 39</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\8.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Home appliance</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\7.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Coffee maker</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 10</p>
+            </div>
+            <div class="imgbox">
+              <img src="Image\interior\4.jpg" width="80px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--Cunsumer Electronics and Gadgets-->
+    <section class="ceandgsection">
+      <div class="ceandgsection-left">
+        <h4 style="font-size: 20px; font-weight: 600; line-height: 26px; letter-spacing: -0.2px; width: 130px;">Consumer electronics and gadgets</h4>
+        <Button id="Source">Source Now</Button>
+      </div>
+      <div class="ceandgsection-right">
+        <div class="rightcontent">
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Smart watches</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/8.jpg" width="82px"  height="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p> Cameras</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 89</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/6.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Headphones</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 10</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/5.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Smart watches</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 80</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/10.jpg" width="80px">
+            </div>
+          </div>
+        
+        </div>
+        <div class="rightcontent">
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Gaming Set</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 35</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/5.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Laptops & PC</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 340</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/7.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Smartphones</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 19</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/2.jpg" width="80px">
+            </div>
+          </div>
+          <div class="rightcontentcol">
+            <div class="col-contenttext">
+              <p>Electronic Kettle</p>
+              <p style="font-size: 13px; color: #8B96A5;">From USD 240</p>
+            </div>
+            <div class="imgbox">
+              <img src="../Image/tech/1.jpg" width="80px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Inquiry Section-->
+    <section class="inquirysection"> 
+        <Div class="inquirysection-filter">
+          <div class="inquirysection-left">
+            <H2 style="font-size: 32px; line-height: 100%; font-weight: 600; letter-spacing: -0.2px; color: #ffffff;">An easy way to send requests to all suppliers</H2>
+            <p style="color: #ffffff; letter-spacing: -0.2; width: 440px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+          <div class="inquirysection-right">
+          <h4 style="font-size: 20px; font-weight: 600; line-height: 28px; letter-spacing: -0.2px;">Send quote to suppliers</h4>
+          <form>
+            <input type="text" value="What item you need?">
+            <textarea>Add more Details</textarea>
+            <div class="quantityandpcs">
+              <input type="text" value="Quantity" style="width: 206px;">
+              <div class="selectpcs">
+                <Select id="pcs">
+                  <option value="" selected disabled >Pcs</option>
+                  <option value="50" >50</option>
+                  <option value="100">100</option>
+                  <option value="1000">1000</option>
+                </Select>
+                <Img src="../Media/down-arrow.png" class="selectpcsdownarrow">
+              </div>
+            </div>
+              <button id="sendinquirybtn">Send Inquiry</button>
+          </form>
+          </div>
+        </Div>
+    </section>
+    <!--Recommended Items-->
+    <section class="recommendeditems">
+      <H3 style="font-size: 24px; font-weight: 600; letter-spacing: -0.2px; line-height: 32px;">Recommended items</H3>
+      <div class="recommendeditems-rows">
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/1.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/3.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/7.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/6.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/5.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+      </div>
+      <div class="recommendeditems-rows">
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/4.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/tech/9.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/cloth/5.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/interior/3.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+        <div class="recommendeditems-column">
+          <img src="../Image/tech/10.jpg" width="200px" height="200px">
+          <p style="font-weight: 500; letter-spacing: 0px; line-height: 22px;">$10.30</p>
+          <p style="letter-spacing: -0.2; line-height: 24px; color: #8B96A5;">T-shirts with multiple colors, for men</p>
+        </div>
+      </div>
+    </section>
+    <!--Extra Services-->
+    <section class="extraservicesection">
+      <H3 style="font-size: 24px; font-weight: 600; letter-spacing: -0.2px; line-height: 32px;">Our extra services</H3>
+      <div class="extraservicesection-row">
+        <div class="extraservicesection-col1">
+          <div class="extraservicesection-container1"> 
+          </div>
+          <div class="extraservicesection-container2">
+            <H6 style="font-weight: 500; letter-spacing: 0px; line-height: 22px; width: 150px;">Source from Industry Hubs</H6>
+            <div class="extraservicesection-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </div>
+          </div>
+        </div> 
+        <div class="extraservicesection-col2">
+          <div class="extraservicesection-container1"> 
+          </div>
+          <div class="extraservicesection-container2">
+            <H6 style="font-weight: 500; letter-spacing: 0px; line-height: 22px; width: 150px;">Customize Your Products</H6>
+            <div class="extraservicesection-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg>          </div>
+            </div>
+        </div> 
+        <div class="extraservicesection-col3">
+          <div class="extraservicesection-container1"> 
+          </div>
+          <div class="extraservicesection-container2">
+            <H6 style="font-weight: 500; letter-spacing: 0px; line-height: 22px; width: 180px;">Fast, reliable shipping by ocean or air</H6>
+            <div class="extraservicesection-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>          </div>
+            </div>
+        </div> 
+        <div class="extraservicesection-col4">
+          <div class="extraservicesection-container1"> 
+          </div>
+          <div class="extraservicesection-container2">
+            <H6 style="font-weight: 500; letter-spacing: 0px; line-height: 22px; width: 150px;">Product monitoring and inspection</H6>
+            <div class="extraservicesection-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"/></svg>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <!-- supplier by Region Section-->
+    <section class="suppliersection">
+      <h3 style="font-size: 24px; font-weight: 600; letter-spacing: -0.2; line-height: 32px;">Suppliers by region</h3>
+      <div class="suppliersection-container">
+        <div class="suppliersection-row">
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=AE.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Arabic Emirates</p>
+              <p style="color: #8B96A5;">shopname.ae</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=AU.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Australia</p>
+              <p style="color: #8B96A5;">shopname.ae</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=US.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">United States</p>
+              <p style="color: #8B96A5;">shopname.ae</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=RU.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Russia</p>
+              <p style="color: #8B96A5;">shopname.ru</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=IT.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Italy</p>
+              <p style="color: #8B96A5;">shopname.it</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="suppliersection-row">
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=DK.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Denmark</p>
+              <p style="color: #8B96A5;">denmark.com.dk</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=FR.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">France</p>
+              <p style="color: #8B96A5;">shopname.com.fr</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=AE.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Arabic Emirates</p>
+              <p style="color: #8B96A5;">shopname.ae</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=CN.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">China</p>
+              <p style="color: #8B96A5;">shopname.ae</p>
+            </div>
+          </div>
+          <div class="suppliersection-col">
+            <img src="../flags/Property 1=GB.png" width="28px" height="20px">
+            <div class="suppliersection-text">
+              <p style="letter-spacing: -0.2; line-height: 24px;">Great Britain</p>
+              <p style="color: #8B96A5;">shopname.co.uk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Newsletter and Subscription Section-->
+    <section class="newslettersection">
+      <h4 style="font-size: 20px; font-weight: 600; letter-spacing: -0.2; line-height: 28px;">Subscribe on our newsletter</h4>
+      <p style="color: #606060; line-height: 24px; letter-spacing: - 0.2px;">Get daily news on upcoming offers from many suppliers all over the world</p>
+        <form id="newslettersection-form">
+          <input type="text" value="Email">
+          <button id="subscribe-btn">Subscribe</button>
+          <svg xmlns="http://www.w3.org/2000/svg"  class="emailicon" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8B96A5"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+        </form>
+    </section>
+  </main>
 
   <!--Footer-->
   <Footer>
-    <Div class="top-footer">
+    <section class="top-footer">
       <div class="topfootercol-1">
-        <img src="../Media/logo-colored.png" alt="logo" class="footer-logo" width="200px">
-        <p>Best information about the compay gires <br>here but now lorem iosum is</p>
+        <img src="../Media/logo-colored.png" alt="logo" class="footer-logo" width="150px" height="46">
+        <p>Best information about the compay gires here but now lorem iosum is</p>
         <div class="social-icons">
-          <i class="fa-brands fa-facebook-f" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px 12px 10px 12px; border-radius: 30px;"></i>
-          <i class="fa-brands fa-twitter" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px;"></i>
-          <i class="fa-brands fa-linkedin-in" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px;"></i>
-          <i class="fa-brands fa-instagram" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px;"></i>
-          <i class="fa-brands fa-youtube" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px;"></i>
+          <i class="fa-brands fa-facebook-f" style="color: azure; background-color: rgb(196, 196, 196);  border-radius: 30px; width: 32px; height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-twitter" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-linkedin-in" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-instagram" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-youtube" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 8px;"></i>
         </div>
       </div>
       <div class="topfootercol">
@@ -176,24 +684,49 @@
       <div class="topfootercol-last">
          <h6>Get App</h6>
          <div class="getappbtn">
-          <div><img src="../Media/apple-logo.png" width="30px"></div>
-          <div class="getappbtn-col">
-            <p>download on the</p>
-            <p class="download">App Store</p>
-          </div>
+          <img src="../Media/Subtract.png">
          </div>
-         <div class="getappbtn">
-          <div><img src="..\Media\playstore (1).png" width="30px"></div>
-          <div class="getappbtn-col">
-            <p>Get it On</p>
-            <p class="download">Google Play</p>
-          </div>
+        <div class="getappbtn">
+          <img src="../Media/Logo.png">
          </div>
       </div>
-    </Div>
-    <Div class="bottom-footer">
+    </section>
 
-    </Div>
+        <!--Bottom Footer-->
+
+    <section class="bottom-footer">
+      <div class="bottomfooter-container">
+              <div class="bottom-footer-left">
+        <p>© 2023 Ecommerce.</p>
+      </div>
+      <div class="bottom-footer-left">
+        <div class="bottomfooter-selectlang">
+        <button class="selectlangbtn">
+          <img src="../flags/Property 1=US.png" width="20px">
+          English
+          <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="12px" fill="#000000"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>
+        </button>
+        <div class="bfselectlang-dropdown">
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_Pakistan.svg.png" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_India.svg.jpg" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_Nigeria.svg.png" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag-United-Kingdom.jpg" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_the_United_States.svg.png" width="20px" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
   </Footer>
 </body>
 </html>

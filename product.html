@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Brand.HTML">
+  <link rel="stylesheet" href="product.html">
+  <link rel="stylesheet" href="listvewproduct.html">
+  <link rel="stylesheet" href="gridview.html">
+  <link rel="stylesheet" href="cart.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../Header&Footer.css">
+  <link rel="stylesheet" href="../listvewproduct.css">
+  <link rel="stylesheet" href="../Body.css">
+  <link rel="stylesheet" href="../Media">
+  <link rel="stylesheet" href="../Image">
+  <link rel="stylesheet" href="brand.js">
+  <link rel="stylesheet" href="productgridview.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+  <title>Document</title>
+  <script src="brand.js"></script>
+
+</head>
+<body>
+  <Header>
+    <!--Left side of Header-->
+    <a href="Brand.HTML" class="header-left">
+      <img src="../media/logo-colored.png" alt="logo" width="150px" height="46px">
+    </a>
+    <!--Center of Header-->
+    <form id="searchForm" class="header-center">
+      <input       
+        class="searchbox"
+        type="search"
+        id="searchInput"
+        placeholder="Search"
+      />
+      <Div class="select-category">
+      <select name="category" id="category">
+        <option value="" selected disabled>All Categories</option>
+        <option value="food">Tech</option>
+        <option value="electronics">Interior</option>
+        <option value="clothing">Cloth</option>
+        <option value="books">Book</option>
+      </select>
+      <img src="../media/down-arrow.png" class="category-arrow" />
+      </Div> 
+      <button class="srchbtn" type="submit">search</button>
+    </form>
+     <!--Right side of Header-->
+    <Div class="header-right">
+      <a href="#" class="header-right-items">
+        <span class="material-symbols-outlined">person</span>
+        <span style="color: #b3b1b1;">Profile</span>
+      </a>
+      <a  href="#" class="header-right-items">
+        <span class="material-symbols-outlined">chat</span>
+        <span style="color: #b3b1b1;">Message</span>
+      </a>
+      <a href="#" class="header-right-items">
+        <span class="material-symbols-outlined">favorite</span>
+        <span style="color: #b3b1b1;">Orders</span>
+      </a>
+      <a href="cart.html" class="header-right-items">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span style="color: #b3b1b1;">Cart</span>
+      </a>
+    </Div>
+  </Header>
+
+
+  <Nav>
+  <!--Left side of Navbar-->
+    <Div class="nav-left">
+      <div>
+        <i class="fa-solid fa-bars" style="width: 24px;"></i>
+        <span class="ctgry">All category</span>
+      </div>
+      <div>
+        <span>Hot Offers</span>
+      </div>
+      <div>
+        <span>Gift Boxes</span>
+      </div>
+      <div>
+        <span>Projects</span>
+      </div>
+      <div>
+        <span>Menu Items</span>
+      </div>
+      <div class="select-Help">
+        <select name="help" id="help">
+          <option value="" selected disabled>Help</option>
+          <option value="live chat">Live Chat</option>
+          <option value="report">Report</option>
+          <option value="help centre">Help centre</option>
+          <option value="refund">Refund</option>
+        </select>
+        <img src="../media/down-arrow.png" class="down-arrow" />
+      </div>
+    </Div>
+      <!--Right side of Navbar-->
+    <Div class="nav-right">
+
+    <div class="select-currency">
+      <select name="currency" id="currency">
+        <option value="" selected disabled>English, USD</option>
+        <option value="urdu pkr">Urdu, PKR</option>
+        <option value="Chinese yen">Chinese, YEN</option>
+        <option value="German euro">German, EURO</option>
+        <option value="hindi rupee">Hindi, RUPEE</option>
+        <option value="English naira">English, NAIRA</option>
+      </select>
+      <img src="../media/down-arrow.png" class="currency-arrow"/>
+    </div>
+
+    <div class="selectcountry">
+      <button class="selectcountrybtn">
+        Ship To
+        <img src="../Media/Germany-flag.png" width="20px">
+        <img src="../Media/down-arrow.png" width="8px">
+      </button>
+      <div class="countrydropdown">
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_Pakistan.svg.png" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_India.svg.jpg" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_Nigeria.svg.png" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag-United-Kingdom.jpg" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_the_United_States.svg.png" width="20px" alt="">
+        </div>
+      </div>
+    </div>
+  </Nav>
+
+  <section class="breadcrump">
+    <div class="breadcrumpcont">
+      <a href="#">Home</a>
+      <span>&#62;</span>
+      <a href="#">Clothings</a>
+      <span>&#62;</span>
+      <a href="#">Men&#39;s wear</a>
+      <span>&#62; </span>
+      <span class="current">Summer clothing</span>
+    </div>
+    
+  </section>
+
+  <main>
+    <section class="productdisplaysection">
+      <div class="productimag-gallery">
+        <img src="../Image/white shirt/whiteshirt1.jpg" class="whiteshirt">
+        <div class="imagesgallery">
+        <img src="../Image/white shirt/whiteshirt1.jpg">
+        <img src="../Image/white shirt/whiteshirt2.png">
+        <img src="../Image/white shirt/whiteshirt3.png">
+        <img src="../Image/white shirt/whiteshirt4.png">
+        <img src="../Image/white shirt/whiteshirt5.png">
+        <img src="../Image/white shirt/whiteshirt6.png">
+        </div>
+      </div>
+
+      <div class="product-info">
+        <div class="instockcont">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00B517"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+          <p>In stock</p>
+        </div>
+        <h4>Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h4>
+        <div class="ratingordersandreviews">
+          <div class="ratingstarandnumber">
+              <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              <p>7.5</p>
+          </div>
+          <div class="reviewiconandtext">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8B96A5"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
+              <p>32 reviews</p>
+          </div>
+          <div class="orderscountandtext">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8B96A5"><path d="M221-120q-27 0-48-16.5T144-179L42-549q-5-19 6.5-35T80-600h190l176-262q5-8 14-13t19-5q10 0 19 5t14 13l176 262h192q20 0 31.5 16t6.5 35L816-179q-8 26-29 42.5T739-120H221Zm-1-80h520l88-320H132l88 320Zm260-80q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM367-600h225L479-768 367-600Zm113 240Z"/></svg>
+              <p>154 sold</p>
+          </div>
+        </div>
+        <div class="product-info-qouta">
+          <div class="product-info-qouta-col-1">
+              <h5>$98.00</h5>
+              <p>50-100 pcs</p>
+          </div>
+          <div class="product-info-qouta-col-2">
+            <h5>$90.00</h5>
+            <p>100-700 pcs</p>
+          </div>
+          <div class="product-info-qouta-col-2">
+            <h5>$78.00</h5>
+            <p>700+ pcs</p>
+          </div>
+         
+        </div>
+        <div class="otherspecificationcont">
+          <div class="otherspecificationcont-row">
+            <p class="light-text">Price: </p>
+            <p>Negotiable</p>
+          </div>
+
+          <div class="otherspecificationcont-row2">
+            <div class="otherspecificationcont-row1">
+              <p class="light-text">Type:  </p>
+              <p>Classic  shoes</p>
+            </div>
+            <div class="otherspecificationcont-row1">
+              <p class="light-text">Material:  </p>
+              <p>Plastic material</p>
+            </div>
+            <div class="otherspecificationcont-row1">
+              <p class="light-text">Design: </p>
+              <p>Modern nice</p>
+            </div>
+          </div>
+
+          <div class="otherspecificationcont-row2">
+            <div class="otherspecificationcont-row1">
+              <p class="light-text">Customization:   </p>
+              <p>Customized logo and design custom packages</p>
+            </div>
+            <div class="otherspecificationcont-row1">
+              <p class="light-text">Protection:  </p>
+              <p>Refund Policy</p>
+            </div>
+            <div class="otherspecificationcont-row1">
+              <p class="light-text">Warranty: </p>
+              <p>2 years full warranty </p>
+            </div>
+          </div>
+
+        </div>
+       
+      </div>
+
+
+
+      <div class="product-inquiryandorder">
+        <div class="product-inquiryandorder-top">
+            <img src="../Media/img.jpg" class="product-inquiryandorder-top-inner-image">
+            <div class="product-inquiryandorder-top-inner-text">
+              <p>Supplier</p>
+              <p>Guanjoi Trading LLC</p>
+            </div>
+        </div>
+
+        <div class="product-inquiryandorder-center">
+          <div class="product-inquiryandorder-center-row1">
+            <img src="../flags/Property 1=DE.png">
+            <p>Germany, Berlin</p>
+          </div>
+          <div class="product-inquiryandorder-center-row1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8B96A5"><path d="m438-338 226-226-57-57-169 169-84-84-57 57 141 141Zm42 258q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/></svg>
+            <p>Verified Seller</p>
+          </div>
+          <div class="product-inquiryandorder-center-row1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#8B96A5"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
+            <p>Worldwide shipping</p>
+          </div>
+        </div>
+
+        <button id="sendinquiry-btn">Send inquiry</button>
+        <button id="sellerprofile-btn">Seller&apos;s profile</button>
+        <div class="savefoelater">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+          <a href="#">Save for later</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="productdetailssection">
+      <div class="productdetailssection-description">
+        <div class="productdetailssection-description-top">
+          <p>Description</p>
+          <p>Reviews</p>
+          <p>Shipping</p>
+          <p>About seller</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      
+
+        <table class="productdetailssection-description-table">
+          <tr>
+            <td class="description-table-left">Model</td>
+            <td class="description-table-right">#8786867</td>
+          </tr>
+            <tr>
+              <td class="description-table-left">Style</td>
+              <td class="description-table-right">Classic style</td>
+            </tr>
+            <tr>
+              <td class="description-table-left">Certificate</td>
+              <td class="description-table-right">ISO-898921212</td>
+            </tr>
+            <tr>
+              <td class="description-table-left">Size</td>
+              <td class="description-table-right">34mm x 450mm x 19mm</td>
+            </tr>
+            <tr>
+              <td class="description-table-left">Memory</td>
+              <td class="description-table-right">36GB RAM</td>
+            </tr>
+        </table>
+
+        <div class="productdetailssection-description-featurescheck">
+          <div class="productdetailssection-description-featurescheck-row">
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="17px" fill="#8B96A5"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+            <p>Some great feature name here</p>
+          </div>
+          <div class="productdetailssection-description-featurescheck-row">
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="17px" fill="#8B96A5"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+          </div>
+          <div class="productdetailssection-description-featurescheck-row">
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="17px" fill="#8B96A5"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+            <p>Duis aute irure dolor in reprehenderit</p>
+          </div>
+          <div class="productdetailssection-description-featurescheck-row">
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="17px" fill="#8B96A5"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+            <p>Some great feature name here</p>
+          </div>
+        </div>
+      </div>
+      <div class="productdetailssection-youmaylike">
+        <h6 class="youmaylike-tittle">You may like</h6>
+        <div class="youmaylikeproductlistview">
+          <img src="../Image/cloth/7.jpg" class="youmaylikeproductlistview-img">
+          <div class="youmaylikeproductlistview-text">
+            <p>Men Blazers Sets Elegant Formal</p>
+            <span>$7.00 - $99.50</span>
+          </div>
+        </div>
+
+        <div class="youmaylikeproductlistview">
+          <img src="../Image/cloth/1.jpg" class="youmaylikeproductlistview-img">
+          <div class="youmaylikeproductlistview-text">
+            <p>Men Shirt Sleeve Polo Contrast</p>
+            <span>$7.00 - $99.50</span>
+          </div>
+        </div>
+
+        <div class="youmaylikeproductlistview">
+          <img src="../Image/cloth/3.jpg" class="youmaylikeproductlistview-img">
+          <div class="youmaylikeproductlistview-text">
+            <p>Apple Watch Series Space Gray</p>
+            <span>$7.00 - $99.50</span>
+          </div>
+        </div>
+
+        <div class="youmaylikeproductlistview">
+          <img src="../Image/cloth/2.jpg" class="youmaylikeproductlistview-img">
+          <div class="youmaylikeproductlistview-text">
+            <p>Basketball Crew Socks Long Stuff</p>
+            <span>$7.00 - $99.50</span>
+          </div>
+        </div>
+
+        <div class="youmaylikeproductlistview">
+          <img src="../Image/cloth/5.jpg" class="youmaylikeproductlistview-img">
+          <div class="youmaylikeproductlistview-text">
+            <p>New Summer Men's  castrol T-Shirts</p>
+            <span>$7.00 - $99.50</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relatedproductsection">
+      <h4>Related products</h4>
+      <div class="relatedproductsection-slider">
+        <div class="relatedproductsection-slider-product">
+          <img src="../Image/cloth/6.jpg" class="relatedproductsection-slider-productimg">
+          <p>Xiaomi Redmi 8 Original </p>
+          <p class="price-tag">$32.00-$40.00</p>
+        </div>
+        <div class="relatedproductsection-slider-product">
+          <img src="../Image/tech/8.jpg" class="relatedproductsection-slider-productimg">
+          <p>Xiaomi Redmi 8 Original </p>
+          <p class="price-tag">$32.00-$40.00</p>
+        </div>
+        <div class="relatedproductsection-slider-product">
+          <img src="../Image/tech/9.jpg" class="relatedproductsection-slider-productimg">
+          <p>Xiaomi Redmi 8 Original </p>
+          <p class="price-tag">$32.00-$40.00</p>
+        </div>
+        <div class="relatedproductsection-slider-product">
+          <img src="../Image/cloth/4.jpg" class="relatedproductsection-slider-productimg">
+          <p>Xiaomi Redmi 8 Original </p>
+          <p class="price-tag">$32.00-$40.00</p>
+        </div>
+        <div class="relatedproductsection-slider-product">
+          <img src="../Image/tech/10.jpg" class="relatedproductsection-slider-productimg">
+          <p>Xiaomi Redmi 8 Original </p>
+          <p class="price-tag">$32.00-$40.00</p>
+        </div>
+        <div class="relatedproductsection-slider-product">
+          <img src="../Media/rasm.jpg" class="relatedproductsection-slider-productimg">
+          <p>Xiaomi Redmi 8 Original </p>
+          <p class="price-tag">$32.00-$40.00</p>
+        </div>
+      </div>
+    </section>
+    <section class="discountedareasection">
+      <div class="discountedareasection-text">
+        <h3>Super discount on more than 100 USD</h3>
+        <p>Have you ever finally just write dummy info</p>
+      </div>
+      <button id="Shopnow-btn">Shop now</button>
+    </section>
+  </main>
+
+
+
+  <Footer>
+    <section class="top-footer">
+      <div class="topfootercol-1">
+        <img src="../Media/logo-colored.png" alt="logo" class="footer-logo" width="150px" height="46">
+        <p>Best information about the compay gires here but now lorem iosum is</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f" style="color: azure; background-color: rgb(196, 196, 196);  border-radius: 30px; width: 32px; height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-twitter" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-linkedin-in" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-instagram" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-youtube" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 8px;"></i>
+        </div>
+      </div>
+      <div class="topfootercol">
+        <h6>About</h6>
+        <Span style="font-weight: 300;">About us</Span>
+        <Span style="font-weight: 300;">Find Stores</Span>
+        <Span style="font-weight: 300;">Category</Span>
+        <Span style="font-weight: 300;">Blog</Span>
+      </div>
+      <div class="topfootercol">
+        <h6>Partnership</h6>
+        <Span style="font-weight: 300;">About Us</Span>
+        <Span style="font-weight: 300;">Find Stores</Span>
+        <Span style="font-weight: 300;">Category</Span>
+        <Span style="font-weight: 300;">Blog</Span>
+      </div>
+      <div class="topfootercol">
+        <h6>Information</h6>
+        <Span style="font-weight: 300;">Help Centre</Span>
+        <Span style="font-weight: 300;">Money Refund</Span>
+        <Span style="font-weight: 300;">Shipping</Span>
+        <Span style="font-weight: 300;">Contact Us</Span>
+      </div>
+      <div class="topfootercol">
+        <h6>For Users</h6>
+        <Span style="font-weight: 300;">Login</Span>
+        <Span style="font-weight: 300;">Register</Span>
+        <Span style="font-weight: 300;">Settings</Span>
+        <Span style="font-weight: 300;">My Orders</Span>
+      </div>
+      <div class="topfootercol-last">
+         <h6>Get App</h6>
+         <div class="getappbtn">
+          <img src="../Media/Subtract.png">
+         </div>
+        <div class="getappbtn">
+          <img src="../Media/Logo.png">
+         </div>
+      </div>
+    </section>
+
+        <!--Bottom Footer-->
+
+    <section class="bottom-footer">
+      <div class="bottomfooter-container">
+              <div class="bottom-footer-left">
+        <p>© 2023 Ecommerce.</p>
+      </div>
+      <div class="bottom-footer-left">
+        <div class="bottomfooter-selectlang">
+        <button class="selectlangbtn">
+          <img src="../flags/Property 1=US.png" width="20px">
+          English
+          <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="12px" fill="#000000"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>
+        </button>
+        <div class="bfselectlang-dropdown">
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_Pakistan.svg.png" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_India.svg.jpg" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_Nigeria.svg.png" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag-United-Kingdom.jpg" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_the_United_States.svg.png" width="20px" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </Footer>
+</body>
+</html>

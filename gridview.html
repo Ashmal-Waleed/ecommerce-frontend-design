@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Brand.HTML">
+  <link rel="stylesheet" href="product.html">
+  <link rel="stylesheet" href="listvewproduct.html">
+  <link rel="stylesheet" href="gridview.html">
+  <link rel="stylesheet" href="cart.html">
+  <link rel="stylesheet" href="../Header&Footer.css">
+  <link rel="stylesheet" href="../listvewproduct.css">
+  <link rel="stylesheet" href="../Body.css">
+  <link rel="stylesheet" href="../Media">
+  <link rel="stylesheet" href="../Image">
+  <link rel="stylesheet" href="brand.js">
+  <link rel="stylesheet" href="gridview.js">
+  <link rel="stylesheet" href="productgridview.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="brand.js"></script>
+
+  <title>Document</title>
+</head>
+
+<script src="main.js"></script>
+<body>
+  <Header>
+    <!--Left side of Header-->
+    <a href="Brand.HTML" class="header-left">
+      <img src="../media/logo-colored.png" alt="logo" width="150px" height="46px">
+    </a>
+    <!--Center of Header-->
+    <form id="searchForm" class="header-center">
+      <input       
+        class="searchbox"
+        type="search"
+        id="searchInput"
+        placeholder="Search"
+      />
+      <Div class="select-category">
+      <select name="category" id="category">
+        <option value="" selected disabled>All Categories</option>
+        <option value="food">Tech</option>
+        <option value="electronics">Interior</option>
+        <option value="clothing">Cloth</option>
+        <option value="books">Book</option>
+      </select>
+      <img src="../media/down-arrow.png" class="category-arrow" />
+      </Div> 
+      <button class="srchbtn" type="submit">search</button>
+    </form>
+     <!--Right side of Header-->
+    <Div class="header-right">
+      <a href="#" class="header-right-items">
+        <span class="material-symbols-outlined">person</span>
+        <span style="color: #b3b1b1;">Profile</span>
+      </a>
+      <a  href="#" class="header-right-items">
+        <span class="material-symbols-outlined">chat</span>
+        <span style="color: #b3b1b1;">Message</span>
+      </a>
+      <a href="#" class="header-right-items">
+        <span class="material-symbols-outlined">favorite</span>
+        <span style="color: #b3b1b1;">Orders</span>
+      </a>
+      <a href="cart.html" class="header-right-items">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span style="color: #b3b1b1;">Cart</span>
+      </a>
+    </Div>
+  </Header>
+
+
+   <Nav>
+  <!--Left side of Navbar-->
+    <Div class="nav-left">
+      <div>
+        <i class="fa-solid fa-bars" style="width: 24px;"></i>
+        <span class="ctgry">All category</span>
+      </div>
+      <div>
+        <span>Hot Offers</span>
+      </div>
+      <div>
+        <span>Gift Boxes</span>
+      </div>
+      <div>
+        <span>Projects</span>
+      </div>
+      <div>
+        <span>Menu Items</span>
+      </div>
+      <div class="select-Help">
+        <select name="help" id="help">
+          <option value="" selected disabled>Help</option>
+          <option value="live chat">Live Chat</option>
+          <option value="report">Report</option>
+          <option value="help centre">Help centre</option>
+          <option value="refund">Refund</option>
+        </select>
+        <img src="../media/down-arrow.png" class="down-arrow" />
+      </div>
+    </Div>
+      <!--Right side of Navbar-->
+    <Div class="nav-right">
+
+    <div class="select-currency">
+      <select name="currency" id="currency">
+        <option value="" selected disabled>English, USD</option>
+        <option value="urdu pkr">Urdu, PKR</option>
+        <option value="Chinese yen">Chinese, YEN</option>
+        <option value="German euro">German, EURO</option>
+        <option value="hindi rupee">Hindi, RUPEE</option>
+        <option value="English naira">English, NAIRA</option>
+      </select>
+      <img src="../media/down-arrow.png" class="currency-arrow"/>
+    </div>
+
+    <div class="selectcountry">
+      <button class="selectcountrybtn">
+        Ship To
+        <img src="../Media/Germany-flag.png" width="20px">
+        <img src="../Media/down-arrow.png" width="8px">
+      </button>
+      <div class="countrydropdown">
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_Pakistan.svg.png" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_India.svg.jpg" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_Nigeria.svg.png" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag-United-Kingdom.jpg" width="20px" alt="">
+        </div>
+        <div class="dropdowncontent">
+          <img src="../Media/Flag_of_the_United_States.svg.png" width="20px" alt="">
+        </div>
+      </div>
+    </div>
+  </Nav>
+
+  <section class="breadcrump">
+    <div class="breadcrumpcont">
+      <a href="#">Home</a>
+      <span>&#62;</span>
+      <a href="#">Clothings</a>
+      <span>&#62;</span>
+      <a href="#">Men&#39;s wear</a>
+      <span>&#62; </span>
+      <span class="current">Summer clothing</span>
+    </div>
+    
+  </section>
+
+
+  <main>
+    <div class="productlistview">
+
+      <div class="productviewcol1">
+        <div class="category-slider">
+          <div class="category-slider-row">
+            <h6 style="color: #1C1C1C;">Category</h6>
+            <img src="../Media/down-arrow.png" class="productviewcol1-downarrow">
+          </div>
+          <div class="category-slider-row">
+            <p>Mobile accessory</p>
+          </div>
+          <div class="category-slider-row">
+            <p>Electronics</p>
+          </div>        
+          <div class="category-slider-row">
+            <p>Smartphones</p>
+          </div>
+          <div class="category-slider-row">
+            <p>Modern tech</p>
+          </div>
+          <div class="category-slider-row">
+            <p class="seeall">See all</p>
+          </div>
+        </div>
+
+        <div class="barnd-slider">
+          <div class="brand-slider-row">
+            <h6 style="color: #1C1C1C;">Brand</h6>
+            <img src="../Media/down-arrow.png" class="productviewcol1-downarrow">
+          </div>
+          <div class="brand-slider-row">
+            <div class="brand-slider-row-checkbox">
+              <input type="checkbox" name="Samsung" id="Samsung">
+              <label for="Samsung">Samsung</label>
+            </div>
+          </div>
+          <div class="brand-slider-row">
+            <div class="brand-slider-row-checkbox">
+              <input type="checkbox" name="apple" id="apple">
+              <label for="apple">Apple</label>
+            </div>
+            
+          </div>        
+          <div class="brand-slider-row">
+            <div class="brand-slider-row-checkbox">
+              <input type="checkbox" name="Huawei" id="Huawei">
+              <label for="Huawei">Huawei</label>
+            </div>
+          </div>
+          <div class="brand-slider-row">
+            <div class="brand-slider-row-checkbox">
+              <input type="checkbox" name="Pocco" id="Pocco">
+              <label for="Pocco">Pocco</label>
+            </div>
+          </div>
+          <div class="brand-slider-row">
+            <p class="seeall">See all</p>
+          </div>
+        </div>
+        
+        <div class="feature-slider">
+          <div class="feature-slider-row">
+            <h6 style="color: #1C1C1C;">Features</h6>
+            <img src="../Media/down-arrow.png" class="productviewcol1-downarrow">
+          </div>
+          <div class="feature-slider-row">
+            <div class="feature-slider-row-checkbox">
+              <input type="checkbox" name="Metallic" id="Metallic">
+              <label for="Metallic">Metallic</label>
+            </div>
+          </div>
+          <div class="feature-slider-row">
+            <div class="feature-slider-row-checkbox">
+              <input type="checkbox" name="Plastic-cover" id="Plastic-cover">
+              <label for="Plastic-cover">Plastic cover</label>
+            </div>
+          </div>
+          <div class="feature-slider-row">
+            <div class="feature-slider-row-checkbox">
+              <input type="checkbox" name="8GB-Ram" id="8GB-Ram">
+              <label for="8GB-Ram">8GB Ram</label>
+            </div>
+          </div>        
+          <div class="feature-slider-row">
+            <div class="feature-slider-row-checkbox">
+              <input type="checkbox" name="Super-power" id="Super-power">
+              <label for="Super-power">Super power</label>
+            </div>
+          </div>
+          <div class="feature-slider-row">
+            <div class="feature-slider-row-checkbox">
+              <input type="checkbox" name="Large-Memory" id="Large-Memory">
+              <label for="Large-Memory">Large Memory</label>
+            </div>
+          </div>
+          <div class="feature-slider-row">
+            <p class="seeall">See all</p>
+          </div>
+        </div>
+
+        <div class="pricerang-slider">
+          <div class="pricerang-slider-row">
+            <h6 style="color: #1C1C1C;">Price Range</h6>
+            <img src="../Media/down-arrow.png" class="productviewcol1-downarrow">
+          </div>
+          <div class="pricerang-slider-row">
+            <input type="range" min="100" max="1000" value="200" value="500">
+          </div>
+          <div class="pricerang-slider-row">
+            <div class="min-max-cont">
+              <label for="mintext">Min</label>
+              <input type="text" id="mintext" value="0">
+            </div>
+            <div class="min-max-cont">
+              <label for="maxtext">Max</label>
+              <input type="text" id="maxtext" value="1000">
+            </div>
+          </div>
+        <div class="pricerang-slider-row">
+          <button id="apply-btn">
+            Apply
+          </button>
+        </div>
+        </div>
+
+        <div class="condition-slider">
+          <div class="condition-slider-row">
+            <h6 style="color: #1C1C1C;">condition</h6>
+            <img src="../Media/down-arrow.png" class="productviewcol1-downarrow">
+          </div>
+          <div class="condition-slider-row">
+            <div class="condition-slider-row-radio">
+              <input type="radio" name="any" id="any">
+              <label for="any">Any</label>
+            </div>
+          </div>
+          <div class="condition-slider-row">
+            <div class="condition-slider-row-radio">
+              <input type="radio" name="Refurbished" id="Refurbished">
+              <label for="Refurbished">Refurbished</label>
+            </div>
+          </div>
+          <div class="condition-slider-row">
+            <div class="condition-slider-row-radio">
+              <input type="radio" name="Brand-new" id="Brand-new">
+              <label for="Brand-new">Brand new</label>
+            </div>
+          </div>        
+          <div class="condition-slider-row">
+            <div class="condition-slider-row-radio">
+              <input type="radio" name="Old-items" id="Old-items">
+              <label for="Old-items">Old items</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="rating-slider">
+          <div class="rating-slider-row">
+            <h6 style="color: #1C1C1C;">Ratings</h6>
+            <img src="../Media/down-arrow.png" class="productviewcol1-downarrow">
+          </div>
+          <div class="rating-slider-row">
+            <div class="rating-slider-row-radio">
+              <input type="checkbox" name="rating" id="rating5">
+              <label for="rating5">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              </label>
+            </div>
+          </div>
+          <div class="rating-slider-row">
+            <div class="rating-slider-row-radio">
+              <input type="checkbox" name="rating4" id="rating4">
+              <label for="rating4">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BDC4CD"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              </label>
+            </div>
+          </div>
+          <div class="rating-slider-row">
+            <div class="rating-slider-row-radio">
+              <input type="checkbox" name="rating3" id="rating3">
+              <label for="rating3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BDC4CD"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BDC4CD"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              </label>
+            </div>
+          </div>        
+          <div class="rating-slider-row">
+            <div class="rating-slider-row-radio">
+              <input type="checkbox" name="rating2" id="rating2">
+              <label for="rating2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BDC4CD"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BDC4CD"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BDC4CD"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="productviewcol2">
+
+        <div class="productviewcol2-top">
+          <div class="productviewcol2-topleft">
+            <p>12,911 items in</p>
+            <h6>Mobile accessory</h6>
+          </div>
+          <div class="productviewcol2-topright">
+            <div class="varified">
+              <input type="checkbox" name="varified" id="varified" selected>
+              <label for="varified">Varified</label>
+            </div>
+            <div class="featured">
+              <select name="featured" id="selectfeatures">
+                <option value="" selected disabled>Featured</option>
+                <option value="matalic">Matalic</option>
+                <option value="Large-Memory">Large Memory</option>
+                <option value="cheap-price"> Cheap Price</option>
+              </select>
+              <img src="../Media/down-arrow.png" class="featured-downarrow">
+            </div>
+            <a href="gridview.html" class="grid-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1C1C1C"><path d="M120-520v-320h320v320H120Zm0 400v-320h320v320H120Zm400-400v-320h320v320H520Zm0 400v-320h320v320H520Z"/></svg>
+            </a>
+            <a href="listvewproduct.html" class="list-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1C1C1C"><path d="M840-120H120v-186h720v186Zm0-266H120v-189h720v189Zm0-269H120v-185h720v185Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="gridviewproduct-container">
+
+        <div class="productviewcol2-row">
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/1.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/4.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/3.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="productviewcol2-row">
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/2.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/6.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/4.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="productviewcol2-row">
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/7.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/8.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="productgridview">
+            <a href="product.html" class="productgridview-img">
+              <img src="../Image/tech/1.jpg">
+            </a>
+            
+            <div class="productgridview-content">
+              <div class="productgridview-text">
+                <div class="productprice">
+                  <h4>$998.00</h4>
+                  <p class="discounted-price">$1128.00</p>
+                </div>
+
+                <div class="ratingstarandnumber">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#FF9017"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="16px" fill="#D4CDC5"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                  <p>7.5</p>
+                </div>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+              
+              </div>
+              <div class="product-row-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0D6EFD"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+   
+
+
+
+    <section class="newslettersection">
+      <h4 style="font-size: 20px; font-weight: 600; letter-spacing: -0.2; line-height: 28px;">Subscribe on our newsletter</h4>
+      <p style="color: #606060; line-height: 24px; letter-spacing: - 0.2px;">Get daily news on upcoming offers from many suppliers all over the world</p>
+        <form id="newslettersection-form">
+          <input type="text" value="Email">
+          <button id="subscribe-btn">Subscribe</button>
+          <svg xmlns="http://www.w3.org/2000/svg"  class="emailicon" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8B96A5"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+        </form>
+    </section>
+  </main>
+
+
+
+
+    <Footer>
+    <section class="top-footer">
+      <div class="topfootercol-1">
+        <img src="../Media/logo-colored.png" alt="logo" class="footer-logo" width="150px" height="46">
+        <p>Best information about the compay gires here but now lorem iosum is</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f" style="color: azure; background-color: rgb(196, 196, 196);  border-radius: 30px; width: 32px; height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-twitter" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-linkedin-in" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-instagram" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 9px;"></i>
+          <i class="fa-brands fa-youtube" style="color: azure; background-color: rgb(196, 196, 196); padding: 10px; border-radius: 30px; width: 32px;  height: 32px; padding: 8px;"></i>
+        </div>
+      </div>
+      <div class="topfootercol">
+        <h6>About</h6>
+        <Span style="font-weight: 300;">About us</Span>
+        <Span style="font-weight: 300;">Find Stores</Span>
+        <Span style="font-weight: 300;">Category</Span>
+        <Span style="font-weight: 300;">Blog</Span>
+      </div>
+      <div class="topfootercol">
+        <h6>Partnership</h6>
+        <Span style="font-weight: 300;">About Us</Span>
+        <Span style="font-weight: 300;">Find Stores</Span>
+        <Span style="font-weight: 300;">Category</Span>
+        <Span style="font-weight: 300;">Blog</Span>
+      </div>
+      <div class="topfootercol">
+        <h6>Information</h6>
+        <Span style="font-weight: 300;">Help Centre</Span>
+        <Span style="font-weight: 300;">Money Refund</Span>
+        <Span style="font-weight: 300;">Shipping</Span>
+        <Span style="font-weight: 300;">Contact Us</Span>
+      </div>
+      <div class="topfootercol">
+        <h6>For Users</h6>
+        <Span style="font-weight: 300;">Login</Span>
+        <Span style="font-weight: 300;">Register</Span>
+        <Span style="font-weight: 300;">Settings</Span>
+        <Span style="font-weight: 300;">My Orders</Span>
+      </div>
+      <div class="topfootercol-last">
+         <h6>Get App</h6>
+         <div class="getappbtn">
+          <img src="../Media/Subtract.png">
+         </div>
+        <div class="getappbtn">
+          <img src="../Media/Logo.png">
+         </div>
+      </div>
+    </section>
+
+        <!--Bottom Footer-->
+
+    <section class="bottom-footer">
+      <div class="bottomfooter-container">
+              <div class="bottom-footer-left">
+        <p>© 2023 Ecommerce.</p>
+      </div>
+      <div class="bottom-footer-left">
+        <div class="bottomfooter-selectlang">
+        <button class="selectlangbtn">
+          <img src="../flags/Property 1=US.png" width="20px">
+          English
+          <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 -960 960 960" width="12px" fill="#000000"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>
+        </button>
+        <div class="bfselectlang-dropdown">
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_Pakistan.svg.png" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_India.svg.jpg" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_Nigeria.svg.png" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag-United-Kingdom.jpg" width="20px" alt="">
+          </div>
+          <div class="bfsldropdown-content">
+            <img src="../Media/Flag_of_the_United_States.svg.png" width="20px" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </Footer>
+</body>
+</html>
